@@ -7,6 +7,7 @@ router.route("/")
     .get(contacts.findAll)
     .post(contacts.create)
     .delete(contacts.deleteAll)
+    .put(contacts.updateAll)
 
 router.route("/favorite")
     .get(contacts.findAllFavorite)
